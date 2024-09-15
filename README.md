@@ -1,8 +1,8 @@
-# Lab Notebook - Team 9 (Software Tools and Techniques)
+# Lab Notebook - Team 8 (Software Tools and Techniques)
 
 **Overview**
 
-This repository contains the LaTeX source code for the lab notebook created by Team 9 for the Software Tools and Techniques course at Maulana Abul Kalam Azad University of Technology (MAKAUT). This notebook documents our lab assignments and procedures.
+This repository contains the LaTeX source code for the lab notebook created by Team 8 for the Software Tools and Techniques course at Maulana Abul Kalam Azad University of Technology (MAKAUT). This notebook documents our lab assignments and procedures.
 
 **Repository Contents**
 
@@ -18,6 +18,8 @@ This repository contains the LaTeX source code for the lab notebook created by T
 * **Lab Assignments:** Detailed procedures for:
     * Assignment 1: Creating and publishing a C program for a calculator.
     * Assignment 2: Fixing a button issue in a mind reader application and creating a pull request.
+    * Assignment 3: Create a CV Using Latex
+    * Assigment  4: Git Branching, Merging, and Conflict Resolution.
 
 **How to Compile**
 
