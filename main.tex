@@ -1,0 +1,78 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{calc}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+\usepackage{parskip}
+\usepackage{hyperref}
+\usepackage[a4paper,left=20 mm,right=10 mm, bottom=10 mm,top=10 mm,margin = .5in]{geometry} % Adjusting the margins
+\usepackage{tikz}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usetikzlibrary{calc}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{tikzpicture}
+    [remember picture, overlay]
+    \draw[line width = 2pt, black] 
+        ($(current page.north west) + (1cm,-1cm)$) 
+        rectangle 
+        ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+    \centering
+    \vspace*{0 cm}
+    \Large\\
+    \textbf{Maulana Abul Kalam Azad University of Technology, WB}
+    \vspace{0.5cm}
+    
+    \includegraphics[width=0.35
+    \textwidth]{makaut1.jpg} % Assuming you have the logo image
+    \vspace{0.5cm}
+    
+    \LARGE
+    \textbf{{Software Tools and Technology\\
+        -: Lab Notebook :-}}
+    \vspace{0.5cm}
+    
+    \large
+    \textbf{Group 8}
+    \vspace{1 cm}
+    
+    \textbf{Repository Link:} \href{https://github.com/Rajarshi-2005/LaTeX-Group-11}{https://github.com/vardhanbhardvaj/STT-GROUP-8}
+    \vspace{1cm}
+    
+    \textbf{Group Members}
+    \vspace{0.5cm}
+
+    \normalsize
+    \begin{enumerate}
+       \item \textbf{Debashree Bhui - Leader}\\
+              \textbf{Roll No: 30001223011}\\
+              \textbf{Department: BCA}
+         \item \textbf{Harsh Vardhan Pandey}\\
+              \textbf{Roll No: 30085323006}\\
+              \textbf{Department: BSc in IT (Cyber Security)}
+        \item \textbf{Sourish Sarkar}\\
+              \textbf{Roll No: 30059223002}\\
+              \textbf{Department: BSc in Forensic Science}
+        \item \textbf{Jayashri Saha}\\
+              \textbf{Roll No: 30059223031}\\
+              \textbf{Department: BSc in Forensic Science}
+        \item \textbf{Surya sekhar Ghosh}\\
+              \textbf{Roll No: 30059223002}\\
+              \textbf{Department: BSc in IT (Data Science)}
+    \end{enumerate}
+    \vspace{0.8 cm}
+
+    \end{titlepage}
+
+    \section*{Table of Contents}
+\tableofcontents
+
+\vspace{1cm}
+
+\end{document}
