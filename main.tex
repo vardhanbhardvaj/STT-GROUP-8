@@ -166,4 +166,88 @@ After verifying that all files were correct and the document rendered as intende
 
 \newpage
 
+\section{Git Branching Merging and Conflict Resolution}
+\textbf{By:} Harsh Vardhan Pandey.
+
+\subsection{Objective}
+The objective of this assignment was to demonstrate proficiency in Git branching, merging, and conflict resolution by working through a series of steps involving branch creation, modification of shared files, and the resolution of conflicts that arise from merging.
+
+
+\subsection{ Creating a New Repository}
+We started by creating a new repository on GitHub named \texttt{git-advanced}. We cloned this repository to our local machine.
+
+\subsection{ Creating and Working on Branches}
+Next, we created a new branch called \texttt{feature-1} and switched to it. After switching to \texttt{feature-1}, we created a file named \texttt{shared.txt} and added the following content:
+\begin{verbatim}
+This is a shared file.
+Line 1: Original text.
+Line 2: Original text.
+\end{verbatim}
+We staged and committed the changes and then pushed the branch to GitHub.
+
+\subsection{Creating a Second Branch from feature-1}
+Following this, we created another branch called \texttt{feature-2} and switched to it. In this branch, we modified the second line of \texttt{shared.txt} to.Modifying the second line of feature-2:
+\begin{verbatim}
+Line 2: Modified text in feature-2.
+\end{verbatim}
+We staged and committed the changes and then pushed the \texttt{feature-2} branch to GitHub.
+
+\subsection{Modifying the File in Feature-1 Branch}
+We switched back to \texttt{feature-1} and then modified the second line of \texttt{shared.txt} to:
+\begin{verbatim}
+Line 2: Modified text in feature-1.
+\end{verbatim}
+We staged and committed the changes and pushed this branch to GitHub.
+
+\begin{center}
+\includegraphics[width=0.7
+    \textwidth]{image1.png} % Assuming you have the logo image
+    \vspace{0.5cm}
+\end{center}
+
+\subsection{Merging Feature-1 into Main}
+After ensuring the changes in \texttt{feature-1} were pushed, we switched to the \texttt{main} branch and merged \texttt{feature-1} into it and pushed the updated \texttt{main} branch.
+
+\begin{center}
+\includegraphics[width=0.7
+    \textwidth]{image2.png} 
+    \vspace{0.5cm}
+\end{center}
+\subsection{Merging Feature-2 and Resolving Conflict}
+Next, we attempted to merge \texttt{feature-2} into the \texttt{main} branch. This resulted in a merge conflict in \texttt{shared.txt} because both branches modified the second line. Git identified the conflict and marked it as follows:
+\begin{verbatim}
+<<<<<<< HEAD
+Line 2: Modified text in feature-1.
+=======
+Line 2: Modified text in feature-2.
+>>>>>>> feature-2
+\end{verbatim}
+We resolved the conflict by editing the file to the following content:
+\begin{verbatim}
+Line 2: Merged text from both branches.
+\end{verbatim}
+We then staged and committed the conflict resolution. Finally, we pushed the changes to GitHub.\\
+
+\begin{center}
+     \includegraphics[width=0.7
+    \textwidth]{image4.png} 
+    \vspace{0.5cm}
+\end{center}
+
+\subsection*{7. Deleting Branches}
+After the merge and conflict resolution, we deleted both feature branches locally and remotely.
+\begin{center}
+ \includegraphics[width=0.4
+    \textwidth]{image6.png}
+    \vspace{0.5cm}
+     \includegraphics[width=0.4
+    \textwidth]{image7.png}
+    \vspace{0.5cm}
+\end{center}
+\begin{center}
+\includegraphics[width=0.7
+    \textwidth]{image2.png} 
+    \vspace{0.5cm}
+\end{center}
+
 \end{document}
