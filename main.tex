@@ -75,6 +75,131 @@
 
 \vspace{1cm}
 
+\section{Assignment 1: Calculator Program using C}
+\textbf{By:} Debashree Bhui.
+
+
+\subsection{Objective}
+The objective of this lab is to develop a basic calculator program using the C programming language. The calculator will perform simple arithmetic operations like addition, subtraction, multiplication, and division based on user input.
+
+\subsection{Program Overview}
+The calculator program is designed to:
+\begin{itemize}
+    \item Accept two numbers from the user.
+    \item Prompt the user to select an arithmetic operation (Addition, Subtraction, Multiplication, Division).
+    \item Perform the selected operation.
+    \item Display the result of the operation to the user.
+\end{itemize}
+
+The program includes error handling to manage division by zero and other invalid inputs.
+
+\subsection{Code Implementation}
+The following is the C code for the calculator program:
+
+\begin{verbatim}
+#include <stdio.h>
+
+int main() {
+    char operator;
+    double num1, num2, result;
+
+    printf("Enter an operator (+, -, *, /): ");
+    scanf("%c", &operator);
+
+    printf("Enter two operands: ");
+    scanf("%lf %lf", &num1, &num2);
+
+    switch(operator) {
+        case '+':
+            result = num1 + num2;
+            break;
+        case '-':
+            result = num1 - num2;
+            break;
+        case '*':
+            result = num1 * num2;
+            break;
+        case '/':
+            if (num2 != 0)
+                result = num1 / num2;
+            else {
+                printf("Error! Division by zero.\n");
+                return -1;
+            }
+            break;
+        default:
+            printf("Error! Operator is not correct\n");
+            return -1;
+    }
+
+    printf("Result: %.2lf\n", result);
+    return 0;
+}
+\end{verbatim}
+
+\subsection{Compiling and Running the Program}
+To compile and run the calculator program:
+\begin{enumerate}
+    \item Open a terminal or command prompt.
+    \item Navigate to the directory where the C file is located.
+    \item Compile the program using a C compiler (e.g., GCC):
+    \begin{verbatim}
+    gcc calculator.c -o calculator
+    \end{verbatim}
+    \item Run the compiled program:
+    \begin{verbatim}
+    ./calculator
+    \end{verbatim}
+\end{enumerate}
+
+\subsection{Adding the Calculator Program to GitHub Repository}
+To add this calculator program to a GitHub repository, follow these steps:
+
+\subsubsection{Step 1: Initialize a Local Git Repository}
+\begin{enumerate}
+    \item Open the terminal and navigate to the directory where your \texttt{calculator.c} file is located.
+    \item If you haven't already, initialize a Git repository in that directory:
+    \begin{verbatim}
+    git init
+    \end{verbatim}
+    This command creates a new Git repository in the current directory.
+\end{enumerate}
+
+\subsubsection{Step 2: Add the File to the Repository}
+\begin{enumerate}
+    \item Add the \texttt{calculator.c} file to the staging area:
+    \begin{verbatim}
+    git add calculator.c
+    \end{verbatim}
+    This command stages the file, indicating that you want to include it in the next commit.
+\end{enumerate}
+\newpage
+\subsubsection{Step 3: Commit the Changes}
+\begin{enumerate}
+    \item Commit the file to the repository with a meaningful message:
+    \begin{verbatim}
+    git commit -m "Add calculator program in C"
+    \end{verbatim}
+\end{enumerate}
+
+\subsubsection{Step 4: Push the Changes to GitHub}
+\begin{enumerate}
+    \item Link your local repository to a remote GitHub repository:
+    \begin{verbatim}
+    git remote add origin https://github.com/yourusername/your-repo-name.git
+    \end{verbatim}
+    \item Push the changes to the GitHub repository:
+    \begin{verbatim}
+    git push -u origin master
+    \end{verbatim}
+\end{enumerate}
+
+\subsubsection{Step 5: Verify the Upload}
+\begin{enumerate}
+    \item Go to your GitHub repository URL in a web browser.
+    \item Verify that the \texttt{calculator.c} file is listed and accessible in the repository.
+\end{enumerate}
+
 \newpage
 
 \section{Assignment 3: Create a CV Using LaTeX}
